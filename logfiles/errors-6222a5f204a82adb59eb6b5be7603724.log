@@ -1,0 +1,30 @@
+================================================================================
+
+2016-04-15 10:41:10 (f528764d624db129b32c21fbca0cb8d6) FATAL ERROR(1): "Call to undefined function mysql_connect()"
+
+Request: GET /
+	- duration: ~2845ms
+	- server: Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.33
+	- server address: 127.0.0.1
+	- user agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0
+	- remote address: f528764d624db129b32c21fbca0cb8d6
+
+Information:
+<br />
+<b>Fatal error</b>:  Call to undefined function mysql_connect() in <b>C:\xampp\htdocs\testshop\inc\xtc_db_connect.inc.php</b> on line <b>27</b><br />
+
+================================================================================
+
+2016-04-15 11:52:00 (f528764d624db129b32c21fbca0cb8d6) FATAL ERROR(1): "Call to undefined function mysql_connect()"
+
+Request: GET /
+	- duration: ~1339ms
+	- server: Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.33
+	- server address: 127.0.0.1
+	- user agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0
+	- remote address: f528764d624db129b32c21fbca0cb8d6
+
+Information:
+<br />
+<b>Fatal error</b>:  Call to undefined function mysql_connect() in <b>C:\xampp\htdocs\testshop\inc\xtc_db_connect.inc.php</b> on line <b>27</b><br />
+

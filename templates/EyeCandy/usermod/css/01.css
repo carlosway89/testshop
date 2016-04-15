@@ -1,0 +1,6 @@
+.article-list.cols .article-list-item-text .price a, .article-list.cols .article-list-item-text .price a:hover {
+    color: #666;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}

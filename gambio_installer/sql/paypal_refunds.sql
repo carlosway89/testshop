@@ -1,0 +1,26 @@
+DROP TABLE IF EXISTS `paypal_refunds`;
+CREATE TABLE IF NOT EXISTS `paypal_refunds` (
+  `paypal_refunds_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `orders_id` int(10) unsigned NOT NULL,
+  `refundtransactionid` varchar(32) NOT NULL,
+  `netrefundvalue` decimal(10,4) NOT NULL,
+  `netrefundcurrency` varchar(3) NOT NULL,
+  `feerefundvalue` decimal(10,4) NOT NULL,
+  `feerefundcurrency` varchar(3) NOT NULL,
+  `grossrefundvalue` decimal(10,4) NOT NULL,
+  `grossrefundcurrency` varchar(3) NOT NULL,
+  `totalrefundedvalue` decimal(10,4) NOT NULL,
+  `totalrefundedcurrency` varchar(3) NOT NULL,
+  `refundinfostatus` varchar(255) NOT NULL,
+  `refundinfopendingreason` varchar(255) NOT NULL,
+  `receiptdata` varchar(255) NOT NULL,
+  `msgsubid` varchar(255) NOT NULL,
+  `timestamp` datetime NOT NULL,
+  `ack` varchar(50) NOT NULL,
+  `correlationid` varchar(50) NOT NULL,
+  `errors` varchar(255) NOT NULL,
+  `version` varchar(10) NOT NULL,
+  `build` varchar(10) NOT NULL,
+  PRIMARY KEY (`paypal_refunds_id`),
+  KEY `orders_id` (`orders_id`)
+) ENGINE=MyISAM;

@@ -1,0 +1,18 @@
+LIZENZBEDINGUNGEN G-PROTECTOR
+
+
+
+1.
+Die Gambio GmbH ist Inhaberin der ausschließlichen Nutzungsrechte an der Software G-Protector (nachfolgend "G-Protector" genannt). G-Protector ist keine Open Source Software und wird nicht unter der GNU GPL lizenziert, da es sich um keine spezielle Erweiterung des unter der GNU GPL lizenzierten Shopsystems handelt.
+
+2.
+Der rechtmäßige Erwerber der Software, die G-Protector enthält, darf G-Protector bestimmungsgemäß benutzen, d.h. für einen (1) Shop einsetzen. Bei einer Weitergabe der Software an Dritte muss der Veräußerer die Software bei sich löschen und darf sie nicht weiter nutzen.
+
+3.
+Supportkunden der Gambio GmbH wird durch diese Lizenzbedingungen das Angebot unterbreitet, G-Protector für beliebig viele eigene Shops einzusetzen. Diese Nutzungserlaubnis gilt auch über das Ende des Supports hinaus. Die Annahme des Angebots kann dadurch erfolgen, dass der Supportkunde G-Protector faktisch für mehrere eigene Shops einsetzt. Der Support bleibt dennoch auf den Shop begrenzt, für den der Supportvertrag abgeschlossen wurde.
+
+4.
+Wer kein Supportkunde der Gambio GmbH ist und/oder G-Protector für Shops Dritter einsetzen möchte, benötigt für den Einsatz von G-Protector für mehr als einen (1) Shop eine besondere Erlaubnis der Gambio GmbH. Anfragen dafür sind an info@gambio.de zu richten. Ansonsten sind weitergehende Nutzungen unzulässig, dies gilt insbesondere für das Angebot von G-Protector zum Download sowie die Herstellung und den Weiterverkauf von Kopien von G-Protector.
+
+5.
+Die AGB der Gambio GmbH, die beim Abschluss des Supportvertrages einbezogen wurden, gelten ergänzend zu diesen Lizenzbedingungen.

@@ -1,0 +1,299 @@
+/* --------------------------------------------------------------
+  StyleEdit v2.0
+  Gambio GmbH
+  http://www.gambio.de
+  Copyright (c) 2010 Gambio GmbH
+  --------------------------------------------------------------
+*/
+
+/* FRONTEND CONTROL  ++++++++++++++++++++++++++++++ */ 
+
+#frontend_control_layer {
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:55px;
+	width:100%;
+	z-index:1200;
+	background-color:#0b0b0b;
+	background-image:url(../images/topbg.png);
+	border-bottom:1px solid #868686;
+}
+
+#frontend_control_spacer {
+	height:55px;
+	width:100%;
+}
+
+#frontend_control_head {
+	position:absolute;
+	overflow:hidden;
+	width:99%;
+	padding:3px;
+}
+
+#head_title {
+	font-family:arial;
+	font-size:13px;
+	font-weight:bold;
+	color:#909090;
+	text-transform:uppercase;
+}
+
+#head_close {
+	float:right;
+	font-family:arial;
+	font-size:12px;
+	font-weight:bold;
+	color:#909090;
+	cursor:pointer;
+}
+#head_close img {
+	position:relative;
+	top:2px;
+}
+
+#frontend_control_buttons {
+	overflow:hidden;
+	position:relative;
+	top:5px;
+	width:600px;
+	height:40px;
+	margin-left:auto;
+	margin-right:auto;
+	color: white;
+}
+
+#ctrl_style {
+	position:absolute;
+	width:290px;
+	top:0px;
+	left:0px;
+}
+#ctrl_boxes {
+	position:absolute;
+	width:290px;
+	top:0px;
+	left:300px;
+}
+.ctrl_label {
+	border: 1px solid white;
+	float:left;
+	width:200px;
+	height:20px;
+	font-family:arial;
+	font-size:11px;
+	line-height:20px;
+	text-transform:uppercase;
+	text-align:center;
+	padding-left:5px;
+}
+
+#go_style_play,
+#go_style_pause,
+#go_boxes_play,
+#go_boxes_pause {
+	margin-left:3px;
+	cursor:pointer;
+}
+
+#frontend_control_buttons .info {
+	position:relative;
+	clear:both;
+	font-size:10px;
+	margin-top:3px;
+}
+
+#frontend_control_buttons .info span {
+	position:absolute;
+	top:-3px;
+	left:10px;
+}
+
+#frontend_control_buttons .info a {
+	color:white;
+}
+
+.gm_box_container {
+	display: inline;
+	max-width: 220px;
+}
+.gm_box_container_dd {
+	max-width: 220px;
+	z-index:1;
+}
+.gm_box_container_ready {
+	background: url(../images/dd_ready.png);
+	margin-bottom:10px;
+	min-height:30px;
+	min-width:180px;
+	cursor:move;
+}
+.gm_box_container_active {
+	background: url(../images/dd_hover.png);
+	margin-bottom:10px;
+	min-height:30px;
+	min-width:180px;
+}
+.gm_box_container_hover {
+	background: url(../images/dd_hover.png);
+	margin-bottom:10px;
+	min-height:30px;
+	min-width:180px;
+	border-color:Green;
+	border-style:solid;
+	border-width:2px;
+}
+
+/*
+.gm_box_container_ready {
+	background: url(../images/dd_ready.png);
+	margin-bottom:10px;
+	min-height:30px;
+	min-width:180px;
+	border-color:Blue;
+	border-style:groove;
+	border-width:2px;
+	cursor:move;
+}
+.gm_box_container_active {
+	background: url(../images/dd_ready.png);
+	margin-bottom:10px;
+	min-height:30px;
+	min-width:180px;
+	border-color:Blue;
+	border-style:dotted;
+	border-width:2px;
+}
+.gm_box_container_hover {
+	background: url(../images/dd_hover.png);
+	margin-bottom:10px;
+	min-height:30px;
+	min-width:180px;
+	border-color:Green;
+	border-style:dotted;
+	border-width:5px;
+}
+*/
+
+#style_edit_layer {
+	border: 1px dotted black;
+	background-color: #ffffff;
+	padding:2px;
+}
+
+#style_edit_layer .gm_edit_heading {
+	border-bottom: 2px solid #ffffff;
+	background-color: #d6e6f3;
+	height:20px;
+}
+
+#style_edit_layer .left_heading {
+	border-right: 2px solid #ffffff;
+	background-color: #0065AD;
+	font-size:1px;
+	width:20px;
+}
+
+#style_edit_layer .gm_heading_title {
+	color: #ffffff;
+	font-family: 		Arial, sans-serif; 
+	font-size: 			12px; 
+	font-weight: 		bold; 	
+	text-align:			left; 
+	text-decoration: 	none; 
+	text-transform:		uppercase; 
+}
+
+#style_edit_layer .right_heading {
+	padding:4px;
+	padding-left:10px;
+	margin:3px;
+	background-color: #393939;
+	color: #ffffff;
+	font-family: 		Arial, sans-serif; 
+	font-size: 			12px; 
+	font-weight: 		normal; 	
+	text-align:			left; 
+	text-decoration: 	none; 
+	text-transform:		none; 
+}
+
+
+#style_edit_layer .gm_edit_form {
+	background-color: #d6e6f3;
+}
+
+#style_edit_form {
+	width: 500px;
+	font-family: Tahoma, Verdana;
+	font-size: 12px;
+}
+
+#style_edit_form .field_medium_size {
+	width: 150px;
+}
+
+#style_edit_form dt {
+	margin:0pt 0px 0pt 0pt;
+	position: relative; 
+	line-height: 2pt;
+}
+#style_edit_form dd {
+	margin: 0pt 0pt 0pt 140px; 
+	position: relative; 
+	top: -15px;
+}
+
+.c_box_status_container {
+	background-color: #ebebeb;
+	color: black;
+	padding:1px;
+}
+
+.c_box_page_menu
+{
+
+}
+
+.c_box_page_menu,
+.c_box_status_switch_on,
+.c_box_status_switch_off {
+	color: black;
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	text-decoration:none;
+}
+
+.c_box_status_switch_active {
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+/* FRONTEND CONTROL  ++++++++++++++++++++++++++++++ */
+
+
+
+/* Buttons  ++++++++++++++++++++++++++++++ */
+
+input.button{
+	width:				120px;	
+	display:			block;
+	border:				2px solid White; 
+	outline:			1px solid #3e5e87; 
+	padding:			3px 2px 3px 2px; 
+	margin:				4px 2px 0px 2px;	
+	color: 				#FFFFFF; 
+	background-color:	#3e5e87; 	
+	font-family: 		Arial, sans-serif; 
+	font-size: 			10px; 
+	font-weight: 		bold; 	
+	text-align:			center; 
+	text-decoration: 	none; 
+	text-transform:		uppercase; 
+	cursor:				pointer;
+}
+/* IE Fix */
+* html .button { padding: 1px 0 1px 0; line-height: 14px; }
+* html button.button { padding: 1px 0 0 0; margin: -2px 1px; line-height: 14px; }

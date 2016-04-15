@@ -1,0 +1,469 @@
+/* --------------------------------------------------------------
+  StyleEdit v2.0
+  Gambio GmbH
+  http://www.gambio.de
+  Copyright (c) 2010 Gambio GmbH
+  --------------------------------------------------------------
+*/
+
+* html #style_edit_layer
+{
+	position: absolute;
+}
+
+* html .ie_png_fix
+{
+	position: relative;
+	z-index: 1165;
+}
+
+* html #style_edit_foreground
+{
+	top:10px;
+	left:10px;
+	position:absolute;
+}
+
+* html #se_archivizer_dummy
+{
+	position:absolute;
+	top:120px;
+}
+
+* html #control_box_layer
+{
+	width:210px;
+}
+
+* html #control_apply
+{
+	margin-left: 102px;
+	height:26px;
+	width:101px;
+	background: url(../images/toolbox/ie_colorizer_button.png) no-repeat;
+	background-position:0px -60px;
+	cursor: pointer;
+}
+
+* html #control_cancel
+{
+	height:26px;
+	width:101px;
+	background: url(../images/toolbox/ie_colorizer_button.png) no-repeat;
+	background-position:0px 0px;
+	float:left;
+	cursor: pointer;
+}
+
+* html #style_edit_save
+{
+	float:left;
+	height:	30px;
+	width:	97px;
+	background: url(../images/toolbox/ie_button_bar_save_undo_redo.png) no-repeat;
+	background-position:-27px 0px;
+}
+
+* html #style_edit_save_backward
+{
+	float:left;
+	height:	30px;
+	width:	28px;
+	background: url(../images/toolbox/ie_button_bar_save_undo_redo.png) no-repeat;
+	background-position:0px 0px;
+	visibility: hidden; 
+}
+
+* html #style_edit_save_forward
+{
+	float:right;
+	height:	30px;
+	width:	28px;
+	background: url(../images/toolbox/ie_button_bar_save_undo_redo.png) no-repeat;
+	background-position:-123px 0px;
+	visibility: hidden; 
+}
+
+* html #style_edit_layer #se_archivizer_content
+{
+	float:left;
+	width:195px;
+	overflow: hidden;
+	height: 230px;
+	z-index: 2000;
+	color: #A9ADBF;
+	font-family:arial;
+	font-size:11px;
+	font-weight:bold;
+	position:absolute;
+	top:125px;
+	left: 18px;
+}
+
+* html #style_edit_layer .se_archive_row
+{	
+	clear:both;	
+	margin-top:7px;
+}
+
+* html #style_edit_layer .se_archive_row_buttons
+{
+	text-align:left;
+	width:210px;
+	overflow:hidden;
+	margin-left: 5px;
+}
+
+* html #style_edit_layer .se_archive_row_info
+{	
+	color: #A9ADBF;
+	font-family:arial;
+	font-size:11px;
+	font-weight:bold;
+	margin-left:15px;
+	margin-right:15px;
+}
+
+
+* html #se_boxes_accordion  .se_button,
+* html #se_backup_accordion .se_button,
+* html #se_backup_accordion .se_button_large,
+* html #style_edit_layer .se_import,
+* html #style_edit_layer .se_delete,
+* html #style_edit_layer .se_open,
+* html #se_background .se_image_upload,
+* html #se_background .se_image_delete,
+* html #se_background .se_image_open
+{	
+	background: url(../images/toolbox/ie_button_standard.png) no-repeat;	
+	width:63px;
+	height:22px;
+	line-height:22px;
+	text-align:center;
+	cursor:pointer;
+	background-position: 0px 0px;
+	float:left;
+	color: #ffffff;
+	font-family:arial;
+	font-size:10px;
+	font-weight:bold;
+}
+
+* html #se_backup_accordion .se_button_large
+{
+	margin-top:5px;
+	width:172px;
+	background: url(../images/toolbox/ie_button_large.png) no-repeat;
+}
+
+* html #se_fonts #se_text-align_left,
+* html #se_fonts #se_text-align_center,
+* html #se_fonts #se_text-align_justify,
+* html #se_fonts #se_text-align_right,
+* html #se_fonts #font-weight,
+* html #se_fonts #font-style,
+* html #se_fonts #text-decoration
+{
+	display:block;
+	float:left;
+	height:24px;
+	width:24px;
+	background: url(../images/toolbox/ie_button_font_style.png) no-repeat;
+	margin-top: 4px;
+}
+
+* html #se_slide_font-size
+{
+	z-index:2000;
+	position:absolute;
+	top:205px;
+	left: 85px;
+	width: 139px;
+	height:16px;
+	background: url(../images/toolbox/ie_slider_bg.png) no-repeat;
+	background-position:center center;
+}
+
+* html #se_slide_font-size .ui-slider-handle:hover,
+* html #se_slide_font-size .ui-slider-handle
+{
+	overflow:hidden;
+	cursor:default;
+	position:absolute;
+	width:9px;
+	height:16px;
+	background: url(../images/toolbox/ie_slider_handle.png) no-repeat;
+	background-position:0px 0px;
+	margin-left:-4px;
+	margin-top:-1px;
+	z-index: 2500;
+}
+
+* html #se_slide_font-size .ui-slider-handle:hover
+{
+	background-position:0px -18px;
+}
+
+* html #se_sliderer
+{
+	position:absolute;
+	margin:0px;
+	padding:0px;
+	margin-top:10px;
+	margin-left:10px;
+	width: 139px;
+	height:16px;
+	background: url(../images/toolbox/ie_slider_bg.png) no-repeat;
+	background-position:center center;
+}
+
+* html #se_slider_pointer:hover,
+* html #se_slider_pointer
+{
+	margin:0px;
+	padding:0px;
+	cursor:default;
+	position:absolute;
+	width:9px;
+	height:16px;
+	background: url(../images/toolbox/ie_slider_handle.png) no-repeat;
+	background-position:0px 0px;
+	z-index: 2500;
+}
+
+* html #se_slider_pointer:hover
+{
+	background-position:0px -18px;
+}
+
+* html #se_archivizer_slider
+{
+	z-index:2000;
+	position:absolute;
+	top:125px;
+	left: 218px;
+	display:none;
+	width: 6px;
+	height:235px;
+	background: url(../images/toolbox/ie_backup_slider_bg.png) no-repeat;
+	background-position:center center;
+}
+
+* html #se_archivizer_slider .ui-slider-handle,
+* html #se_archivizer_slider .ui-slider-handle:hover
+{
+	overflow:hidden;
+	cursor:default;
+	position:absolute;
+	width:16px;
+	height:9px;
+	background: url(../images/toolbox/ie_backup_slider_handle.png) no-repeat;
+	background-position:0px 0px;
+	margin-left:-1px;
+	margin-top:-4px;
+}
+
+* html #se_archivizer_slider .ui-slider-handle:hover
+{
+	background-position:0px -11px;
+}
+
+
+* html #se_styles_accordion .ui-accordion-content
+{
+	background-image: none;
+	position:static;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop src='StyleEdit/images/toolbox/accordion_set_body_normal.png')
+}
+
+* html #se_boxes_accordion .ui-accordion-content,
+* html #se_backup_accordion .ui-accordion-content
+{
+	background-image: none;
+	position:static;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop src='StyleEdit/images/toolbox/accordion_set_body_large.png')
+}
+
+* html #se_styles_accordion .ui-state-default,
+* html #se_boxes_accordion .ui-state-default,
+* html #se_backup_accordion .ui-state-default
+{
+	background-image: none;
+	position:static;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop src='StyleEdit/images/toolbox/accordion_set_header.png')
+}
+
+* html #se_styles_accordion .ui-state-active,
+* html #se_boxes_accordion .ui-state-active,
+* html #se_backup_accordion .ui-state-active
+{
+	background-image: none;
+	position:static;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop src='StyleEdit/images/toolbox/accordion_set_header_active.png')
+}
+
+* html #style_edit_tabs ul .ui-state-default
+{
+	background-image: none;
+	position:static;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop src='StyleEdit/images/toolbox/tab_set_inactive.png')
+}
+
+* html #style_edit_tabs ul .ui-state-default:hover
+{
+	background-image: none;
+	position:static;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop src='StyleEdit/images/toolbox/tab_set_hover.png')
+}
+
+* html #style_edit_tabs ul .ui-state-active,
+* html #style_edit_tabs ul .ui-state-active:hover
+{
+	background-image: none;
+	position:static;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop src='StyleEdit/images/toolbox/tab_set_active.png')
+}
+
+* html .style_edit_boxes_start,
+* html .style_edit_boxes_stop,
+* html .style_edit_button_start,
+* html .style_edit_button_stop
+{
+	height:	40px;
+	width:	208px;
+	cursor: pointer;
+	background-image: none;
+	position:static;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop src='StyleEdit/images/toolbox/button_start.png')
+}
+
+* html .style_edit_boxes_stop,
+* html .style_edit_button_stop
+{
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop src='StyleEdit/images/toolbox/button_stop.png')
+}
+
+/* BOF EXPERT MODE */
+* html .style_edit_expert_button_r,
+* html .style_edit_expert_button_r:hover,
+* html .style_edit_expert_button_r_active,
+* html .style_edit_expert_button_r_active:hover,
+* html .style_edit_expert_button_l,
+* html .style_edit_expert_button_l:hover,
+* html .style_edit_expert_button_l_active,
+* html .style_edit_expert_button_l_active:hover
+{
+	background: url(../images/toolbox/ie_expert_buttons.png) no-repeat;
+}
+
+* html .style_edit_expert_button_r,
+* html .style_edit_expert_button_r:hover,
+* html .style_edit_expert_button_r_active,
+* html .style_edit_expert_button_r_active:hover
+{
+	left: 211px;
+}
+
+* html .style_edit_expert_button_l,
+* html .style_edit_expert_button_l:hover,
+* html .style_edit_expert_button_l_active,
+* html .style_edit_expert_button_l_active:hover
+{
+	left: 11px;
+}
+
+/* right side */
+* html .style_edit_expert_button_r
+{
+	background-position: 0px -244px;
+}
+
+* html .style_edit_expert_button_r:hover
+{
+	background-position:0px -305px;
+}
+
+* html .style_edit_expert_button_r_active
+{
+	background-position:0px -366px;
+}
+
+* html .style_edit_expert_button_r_active:hover
+{
+	background-position:0px -427px;
+}
+
+/* left side */
+* html .style_edit_expert_button_l
+{
+	background-position:0px 0px;
+}
+
+* html .style_edit_expert_button_l:hover
+{
+	background-position:0px -61px;
+}
+
+* html .style_edit_expert_button_l_active
+{
+	background-position:0px -122px;
+}
+
+* html .style_edit_expert_button_l_active:hover
+{
+	background-position:0px -183px;
+}
+/* EOF EXPERT MODE */
+
+* html #se_close_tooltip,
+* html #se_close
+{
+	overflow:hidden;
+	cursor:pointer;
+	height:	16px;
+	width:	16px;
+	background-position: 0px 0px;
+	position:absolute;
+	top:11px;
+	left:203px;
+	z-index: 1100;
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop src='StyleEdit/images/toolbox/se_close.png')
+}
+
+* html #se_tooltip
+{
+	z-index: 2000;
+	display:none;
+	position:absolute;	
+	margin:0px 0px 0px 5px;
+	padding:0px;
+	width:		152px;
+	height:		117px;
+	overflow: hidden;
+	font-family:arial;
+	color:#fff;
+	font-size:11px;
+	background: url(../images/toolbox/ie_se_toolbox.png) no-repeat;
+}
+
+* html #se_close_tooltip
+{
+	position:absolute;
+	top:5px; 
+	left:128px;
+}
+
+* html #coord_box
+{
+	height:200px;
+	width:200px;
+	background-color:#ff0000;
+	cursor:crosshair;
+	position: absolute;
+	top:9px;
+	left: 9px;
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop src='StyleEdit/images/pool.png')
+}
+

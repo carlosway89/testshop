@@ -1,0 +1,23 @@
+## Um das Caching für Bilder und Javascripte zu aktivieren, benennen Sie diese Datei bitte in .htaccess um. Beachten Sie,
+## dass dies ebenfalls für folgende Dateien gilt:
+## images/htaccess
+## images/product_images/htaccess
+## templates/htaccess
+##
+## To activate the caching of images and java-scripts, please rename this file to .htaccess. This also applies to the 
+## following files:
+## images/htaccess
+## images/product_images/htaccess
+## templates/htaccess
+
+<IfModule mod_expires.c>
+ExpiresActive On 
+ExpiresDefault "access plus 1 month"
+ExpiresByType image/x-icon "access plus 1 year"
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/jpg "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType text/css "access plus 1 week"
+ExpiresByType application/javascript "access plus 1 week"
+</IfModule>

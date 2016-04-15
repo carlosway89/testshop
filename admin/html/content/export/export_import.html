@@ -1,0 +1,69 @@
+{load_language_text section="export_schemes"}
+<div id="import_container">
+	<div>  
+		<form id="upload_import_file_form">
+			<div class="span_3_5">
+				<div class="row" style="padding: 0;">
+					<div class="span_1">
+						<label>{$txt.upload_import_file}:</label>
+						<input id="upload_import_file" name="upload_import_file" title="{$txt.tooltip_import_file_extension}" class="validate_csv-import_file_extension" type="file" size="54"  /> 
+					</div>
+					<div class="clear_both"> <!-- &nbsp; --> </div>
+				</div>
+				<div class="button_container">
+					<div class="button_left_container"></div>
+					<div class="button_right_container">
+						<a onclick="return false;" class="admin_button green upload_import_file_button" href="#">{$txt.upload}</a>
+					</div>
+					<div class="clear_both"> <!-- &nbsp; --> </div>
+				</div>
+				<div class="clear_both"> <!-- &nbsp; --> </div>
+			</div>
+			<div class="clear_both"> <!-- &nbsp; --> </div>
+		</form>
+		
+		<div id="import_form_container"{if !$content_data.import_file_data} style="display:none;"{/if}>
+			<br />
+			<br />
+			<div class="span_3_5">
+				<div class="row">
+					<div class="span_1">
+						<label>{$txt.available_import_files}:</label>
+						<div class="tooltip_wrapper" title="{$txt.tooltip_select_import_file}">
+							<select id="select_import_file" name="select_import_file">
+							{foreach from=$content_data.import_file_data key=file_key item=file name=import_file_data }
+								<option value="{$file}">{$file}</option>
+							{/foreach}
+							</select>
+						</div>
+					</div>
+					<div class="clear_both"> <!-- &nbsp; --> </div>
+				</div>
+				<div class="row">
+					<div class="span_1">
+						<label for="import_field_separator">{$txt.field_separator}:</label>
+						<input type="text" value="|" id="import_field_separator" name="import_field_separator" title="{$txt.tooltip_import_field_separator}" />
+					</div>
+					<div class="clear_both"> <!-- &nbsp; --> </div>
+				</div>
+				<div class="row">
+					<div class="span_1">
+						<label for="import_field_quotes">{$txt.field_quotes}:</label>
+						<input type="text" value="&quot;" id="import_field_quotes" name="import_field_quotes" title="{$txt.tooltip_import_field_quotes}" />
+					</div>
+					<div class="clear_both"> <!-- &nbsp; --> </div>
+				</div>
+				<div class="clear_both"> <!-- &nbsp; --> </div>
+				<div class="button_container">
+					<div class="button_left_container"></div>
+					<div class="button_right_container">
+						<a onclick="return false;" title="{$txt.import}" class="admin_button green start_import_button" href="export/export_scheme_export.html?type=import">{$txt.import}</a>
+					</div>
+					<div class="clear_both"> <!-- &nbsp; --> </div>
+				</div>
+			</div>
+			<div class="clear_both"> <!-- --> </div>
+		</div>
+	</div>
+	<div class="clear_both"> <!-- --> </div>
+</div>

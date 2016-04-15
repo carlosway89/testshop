@@ -1,0 +1,51 @@
+<!--
+ Released under the GNU General Public License (Version 2)
+ [http://www.gnu.org/licenses/gpl-2.0.html]
+-->
+<form name='heidelpay' class='module_option_checked' action='{$formUrl}' method='post' onsubmit='return valGatewayForm();' autocomplete='off'>
+	<table class="newreg_{$pm}">
+		<colgroup>
+			<col width="145">
+			<col width="165">
+		</colgroup>
+		<tr>
+			<td><label>{$smarty.const.HGW_TXT_CARDBRAND}*:</label></td>
+			<td><select id="cardBrand" name="ACCOUNT.BRAND">
+				{foreach key=brand item=brandname from=$cardBrands[$pm]}
+					<option value='{$brand}'>{$brandname}</option>
+				{/foreach}
+			</select></td>
+		</tr>
+		<tr>
+			<td><label>{$smarty.const.HGW_TXT_CARDNUMBER}*:</label></td>
+			<td><input type="text" class="text" value="" id="cardNumber" name="ACCOUNT.NUMBER" /></td>
+		</tr>			
+		<tr>
+			<td><label>{$smarty.const.HGW_TXT_CARDHOLDER}*:</label></td>
+			<td><input type="text" class="text" value="{if $user.first_name != ''}{$user.first_name}{/if} {if $user.last_name != ''}{$user.last_name}{/if}" id="cardHolder" name="ACCOUNT.HOLDER" /></td>
+		</tr>			
+		<tr>
+			<td><label>{$smarty.const.HGW_TXT_CARDEXPIRY}*:</label></td>
+			<td class='exp_date'>
+				<select name="ACCOUNT.EXPIRY_MONTH">
+					{foreach item=i from=1|@range:12}<option value="{'%02d'|sprintf:$i}">{'%02d'|sprintf:$i}</option>{/foreach}
+				</select>	
+				<select name="ACCOUNT.EXPIRY_YEAR">
+					{assign var=startyear value=$smarty.now|date_format:'%Y'}
+					{foreach item=i from=$startyear|@range:($startyear+10)}<option value="{$i}">{$i}</option>{/foreach}
+				</select>
+			</td>
+		</tr>			
+		<tr>
+			<td><label>{$smarty.const.HGW_TXT_CARDVERI}*:</label></td>
+			<td><input type="text" class="text" value="" id="cardVerification" name="ACCOUNT.VERIFICATION" /></td>
+		</tr>
+		<tr>
+			<td colspan='2' class="description">{$smarty.const.HGW_TXT_MAND}</td>
+		</tr>
+	</table>
+	{if $DbOnRg}<input type="hidden" name='CRITERION.DBONRG' value='{$DbOnRg}' />{/if}
+	<br/><br/>
+	<input type="button" value="{$smarty.const.HGW_BTN_CANCEL}" class="grey button left" onClick="location.href='ext/heidelpay/heidelpayGW_response.php?cancel=1'" />
+	<input type="submit" value="{$smarty.const.HGW_BTN_CONTINUE}" class="green button right" />
+</form>

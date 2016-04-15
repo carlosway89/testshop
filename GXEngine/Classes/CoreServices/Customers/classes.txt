@@ -1,0 +1,56 @@
+
+[Services]
+	AddressBookService
+	CountryService
+	CustomerService
+	CustomerRegistrationInputValidatorService
+
+[Entities]
+	Customer
+	CustomerAddress
+	CustomerCountry
+	CustomerCountryZone
+
+[Value Objects]
+	AddressBlock
+	CustomerCallNumber
+	CustomerCity
+	CustomerCompany
+	CustomerEmail
+	CustomerFirstname
+	CustomerGender
+	CustomerLastname
+	CustomerNumber
+	CustomerPassword
+	CustomerPostcode
+	CustomerServiceSettings
+	CustomerStreet
+	CustomerSuburb
+	CustomerInputValidatorSettings
+	CustomerVatNumber
+	CustomerCountryName
+	CustomerCountryIso2
+	CustomerCountryIso3
+	CustomerCountryZoneName
+	CustomerCountryZoneIsoCode
+
+[Factories]
+	CustomerFactory
+
+[Repositories]
+	CustomerRepository
+	CustomerAddressRepository
+	CustomerCountryRepository
+	CustomerCountryZoneRepository
+
+[Infrastructure]
+	CustomerAddressDeleter
+	CustomerAddressReader
+	CustomerAddressWriter
+	CustomerAddressDeleter
+	CustomerAddressReader	
+	CustomerCountryReader
+	CustomerCountryZoneReader
+	CustomerReader
+	CustomerWriter
+	CustomerDeleter

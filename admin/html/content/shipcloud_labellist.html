@@ -1,0 +1,28 @@
+<div class="gx-container" id="sc_labellist_container">
+	{if $shipments}
+		<table class="gx-compatibility-table">
+			<tr class="dataTableHeadingRow gx-container">
+				<th>##created_at</th>
+				<th>##carrier_and_service</th>
+				<th>##carrier_tracking_no</th>
+				<th>##shipment_price</th>
+				<th></th>
+			</tr>
+			{foreach from=$shipments item=shipment}
+			<tr class="dataTableRow gx-container">
+				<td class="dataTableContent">{$shipment->created_at}</td>
+				<td class="dataTableContent">{$shipment->carrier}/{$shipment->service}</td>
+				<td class="dataTableContent">{$shipment->carrier_tracking_no}</td>
+				<td class="numeric_cell dataTableContent">{$shipment->price|string_format:"%.2f"}</td>
+				<td class="dataTableContent">
+					<a class="btn pull-right remove-margin-bottom" href="{$shipment->tracking_url}" target="_new">##tracking</a>
+					<a class="btn pull-right remove-margin-bottom" href="{$shipment->label_url}" target="_new">##label</a>
+				</td>
+			</tr>
+			{/foreach}
+		</table>
+	{else}
+		##no_shipments
+	{/if}
+</div>
+

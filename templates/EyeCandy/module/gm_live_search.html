@@ -1,0 +1,10 @@
+{load_language_text section="index"}
+
+{if $module_content}
+	<span id="live_search_head">{$txt.text_live_search_head}:</span>
+	<ul>
+	{foreach name=aussen item=module_data from=$module_content}		
+		<li><a href="{$module_data.PRODUCTS_URL}"><span id="livesearch_{$module_data.PRODUCTS_ID}" class="flyover_item">{$module_data.PRODUCTS_NAME}</span></a></li>
+	{/foreach}
+	</ul>
+{/if}	
